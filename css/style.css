@@ -1,0 +1,200 @@
+/* 
+** @HTML
+**
+** Limpieza bordes y margernes del docuemnto html
+**
+*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+** @body
+**
+*/
+
+body{
+   background-color: white;
+   font-family: "Roboto", sans-serif;
+}
+
+body h1, h2, h3{
+    font-family: "Tinos", serif;
+
+}
+
+body h1{
+    font-size: xxx-large;
+}
+
+body h2{
+    font-size: xx-large;
+}
+
+body h3{
+    font-size: x-large;
+}
+
+
+/* 
+** @Header
+** 
+*/
+
+header{
+    background-image: url(../img/taller.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+}
+
+header .contenedor-header .menu-navegacion{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(19, 37, 203);
+    height: 50px;
+
+}
+
+header .contenedor-header .menu-navegacion .nav-imagen{
+    margin: 10px;
+}
+
+header .contenedor-header .menu-navegacion .liks-navegacion{
+    margin: 0;
+}
+
+header .menu-navegacion .liks-navegacion a {
+    text-decoration: none;
+    color: black;
+    margin-right: 60px;
+}
+
+header .menu-navegacion .liks-navegacion a:hover {
+    font-size: large;
+    color: black;
+    
+}
+
+header .cabecera{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* 
+** @Main
+**
+*/
+
+main{
+    background-color: white;
+
+}
+
+.titulo-informacion, .titulo-contenedor-cards{
+    text-align: center;
+}
+
+
+.contenedor-informacion{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 500px;
+}
+
+.contenedor-informacion a{
+    text-decoration: none;
+    color: rgb(60, 63, 241);    
+}
+
+.contenedor-informacion a:hover{
+    color: blue;
+    text-decoration: solid underline;
+    font-size: larger;
+}
+
+
+
+.titulo-informacion{
+    padding: 30px;
+    
+}
+
+.texto-informacion{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contenedor-cards{
+    background-color: rgba(43, 5, 255, 0.241);
+}
+
+.titulo-contenedor-cards{
+    padding: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    border: 0.5px solid rgba(0, 0, 0, 0.357);
+    border-radius: 12px;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.1), 10px 10px 3px rgba(0, 0, 0, 0.06);;
+    background-color: white;
+    
+}
+
+.card:hover{
+    width: 305px;
+    height: 355px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+
+    padding: 20px;
+}
+
+.card p{
+    margin-top: 10px;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    text-decoration: solid;
+    font-size: larger;
+}

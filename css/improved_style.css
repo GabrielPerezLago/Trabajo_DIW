@@ -1,0 +1,149 @@
+
+/* Variables de colores */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #f5f5f5;
+    --text-color: #333333;
+    --hover-color: #104e8b;
+}
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-image: url(../img/taller.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.menu-navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-navegacion a:hover {
+    color: #104e8b;
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+.titulo-informacion, .titulo-contenedor-cards {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+.contenedor-informacion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenedor-informacion a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contenedor-informacion a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Tarjetas */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: var(--primary-color);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
