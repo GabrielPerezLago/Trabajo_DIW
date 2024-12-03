@@ -1,4 +1,3 @@
-
 /* Variables de colores */
 :root {
     --primary-color: #1e90ff;
@@ -16,9 +15,23 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f5f5f5;
+    background-color: white;
     color: #333333;
     line-height: 1.6;
+}
+
+body h1{
+    font-size: 20rem;
+    font-family: "Tinos", serif;
+}
+
+body h2{
+    font-size: 3rem;
+    font-family: "Tinos", serif;
+}
+
+body h3{
+    font-size: x-large;
 }
 
 /* Encabezado */
@@ -27,16 +40,12 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 1000px;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-header h1 {
-    font-size: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-}
+
 
 .menu-navegacion {
     display: flex;
@@ -51,29 +60,47 @@ header h1 {
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
-    transition: color 0.3s ease;
+    
 }
 
 .menu-navegacion a:hover {
     color: #104e8b;
 }
 
+.cabecera {
+    display: grid;
+    align-items: center;    
+    padding-top: 100px;
+    text-align: center;             
+}
+
 /* Sección principal */
-main {
-    padding: 20px;
+main { 
+    
     background-color: white;
 }
 
-.titulo-informacion, .titulo-contenedor-cards {
+.titulo-informacion,
+.titulo-contenedor-cards, .titulo-horarios {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     color: #1e90ff;
+    padding: 30px;
 }
 
 .contenedor-informacion {
     text-align: center;
-    margin-bottom: 40px;
+   
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.texto-informacion {
+    font-size: larger;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
 }
 
 .contenedor-informacion a {
@@ -91,13 +118,19 @@ main {
 }
 
 /* Tarjetas */
+.contenedor-cards{
+    background-color: #050505d4;
+    width: 100%;
+    padding: 50px;
+}
 .cards {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .card {
@@ -107,20 +140,19 @@ main {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(255, 248, 248, 0.693); */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     margin: 10px;
     padding: 10px;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 1px 1px rgb(255, 248, 248);
 }
-
 
 
 .card h3 {
@@ -143,6 +175,29 @@ main {
 .card a:hover {
     color: var(--primary-color);
 }
+
+.contenedor-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+}
+
+.contenedor-tabla-horarios table, tr, th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+.contenedor-tabla-horarios th, td{
+    padding: 20px;
+}
+
+.contenedor-tabla-horarios th{
+    color: #1e90ff;
+}
+
 
 /* Pie de página */
 footer {
